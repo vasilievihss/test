@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#c2185b" />
+    <title>Мастер маникюра | Портфолио и запись</title>
+    <meta
+      name="description"
+      content="Сайт-визитка мастера маникюра: услуги, портфолио, описание и запись."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Перейти к контенту</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="На главную">
+          <span class="brand__mark" aria-hidden="true">✦</span>
+          <span class="brand__text">
+            <span class="brand__name">Мастер маникюра</span>
+            <span class="brand__subtitle">аккуратно • качественно • в срок</span>
+          </span>
+        </a>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-controls="site-nav" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+          <a href="#about">О мастере</a>
+          <a href="#services">Услуги</a>
+          <a href="#portfolio">Работы</a>
+          <a href="#contacts">Контакты</a>
+          <button class="btn btn--primary btn--sm btn--header-cta" type="button" data-open-booking>
+            Записаться
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero__copy">
+            <p class="pill">Маникюр • покрытие • дизайн</p>
+            <h1 class="hero__title">
+              Красивые ногти с ухоженной формой и стойким покрытием
+            </h1>
+            <p class="hero__lead">
+              Работаю с гель-лаком и дизайном на любой вкус. Подберу форму, учту пожелания и расскажу, как сохранить
+              результат дольше.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contacts">Оставить заявку</a>
+              <button class="btn btn--ghost" type="button" data-open-booking>Выбрать услугу</button>
+            </div>
+
+            <div class="hero__stats" role="list" aria-label="Преимущества">
+              <div class="stat" role="listitem">
+                <div class="stat__value">1.5ч</div>
+                <div class="stat__label">в среднем на полный маникюр</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat__value">стойко</div>
+                <div class="stat__label">без сколов (при соблюдении ухода)</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat__value">дизайн</div>
+                <div class="stat__label">от минимализма до ярких акцентов</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-label="Пример работ">
+            <div class="visual-grid">
+              <div class="visual-card visual-card--a">
+                <div class="visual-card__label">Нюд</div>
+              </div>
+              <div class="visual-card visual-card--b">
+                <div class="visual-card__label">Френч</div>
+              </div>
+              <div class="visual-card visual-card--c">
+                <div class="visual-card__label">Акцент</div>
+              </div>
+              <div class="visual-card visual-card--d">
+                <div class="visual-card__label">Блеск</div>
+              </div>
+            </div>
+            <p class="hero__small">
+              Замените изображения на ваши фото — ниже в “Портфолио” уже есть карточки под работы.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">О мастере</h2>
+            <p class="section__subtitle">
+              Подход “бережно к ногтям”, точность в деталях и понятная запись.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3 class="about-card__title">Как проходит работа</h3>
+              <ul class="list">
+                <li>
+                  Консультация и подбор формы/длины
+                </li>
+                <li>
+                  Подготовка ногтя и аккуратная обработка
+                </li>
+                <li>
+                  Покрытие и дизайн по согласованному референсу
+                </li>
+                <li>
+                  Рекомендации по уходу для стойкого результата
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-card about-card--accent">
+              <h3 class="about-card__title">Что вы получите</h3>
+              <div class="about-checks">
+                <div class="check">
+                  <span class="check__icon" aria-hidden="true">✓</span>
+                  Чистую работу и аккуратные края
+                </div>
+                <div class="check">
+                  <span class="check__icon" aria-hidden="true">✓</span>
+                  Удобную запись и напоминания
+                </div>
+                <div class="check">
+                  <span class="check__icon" aria-hidden="true">✓</span>
+                  Дизайн, который носится в жизни
+                </div>
+              </div>
+
+              <div class="about-card__cta">
+                <button class="btn btn--primary" type="button" data-open-booking>
+                  Записаться
+                </button>
+                <a class="btn btn--ghost" href="#portfolio">Посмотреть работы</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Услуги и цены</h2>
+            <p class="section__subtitle">Ниже пример. Подставьте свои услуги и стоимость.</p>
+          </div>
+
+          <div class="services-grid" role="list" aria-label="Список услуг">
+            <article class="service-card" role="listitem">
+              <h3 class="service-card__title">Маникюр + покрытие гель-лак</h3>
+              <p class="service-card__desc">Классический/комбинированный, выравнивание и стойкое покрытие.</p>
+              <div class="service-card__meta">
+                <span class="tag">от 1800 ₽</span>
+                <span class="tag tag--soft">1.5–2 часа</span>
+              </div>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <h3 class="service-card__title">Наращивание / укрепление</h3>
+              <p class="service-card__desc">Укрепление, коррекция формы, подготовка под покрытие.</p>
+              <div class="service-card__meta">
+                <span class="tag">от 2200 ₽</span>
+                <span class="tag tag--soft">по состоянию ногтей</span>
+              </div>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <h3 class="service-card__title">Дизайн ногтей</h3>
+              <p class="service-card__desc">Френч, втирка, стразы, геометрия, “минимум/максимум”.</p>
+              <div class="service-card__meta">
+                <span class="tag">+ от 300 ₽</span>
+                <span class="tag tag--soft">согласуем эскиз</span>
+              </div>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <h3 class="service-card__title">Снятие покрытия</h3>
+              <p class="service-card__desc">Аккуратное снятие без повреждения ногтевой пластины.</p>
+              <div class="service-card__meta">
+                <span class="tag">от 500 ₽</span>
+                <span class="tag tag--soft">по необходимости</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <div class="container">
+          <div class="section__head section__head--row">
+            <div>
+              <h2 class="section__title">Портфолио (работы)</h2>
+              <p class="section__subtitle">Картинки-заглушки замените на ваши фото. Можно оставить и так.</p>
+            </div>
+
+            <div class="filters" aria-label="Фильтр работ">
+              <button class="chip chip--active" type="button" data-filter="all">Все</button>
+              <button class="chip" type="button" data-filter="nude">Нюд</button>
+              <button class="chip" type="button" data-filter="french">Френч</button>
+              <button class="chip" type="button" data-filter="design">Дизайн</button>
+              <button class="chip" type="button" data-filter="sparkle">Блеск</button>
+            </div>
+          </div>
+
+          <div class="portfolio-grid" role="list" aria-label="Сетка работ">
+            <article class="work-card" role="listitem" data-tags="nude">
+              <div class="work-card__img work-card__img--1"></div>
+              <div class="work-card__body">
+                <div class="work-card__top">
+                  <h3 class="work-card__title">Нюд с деликатным акцентом</h3>
+                  <span class="work-card__tag">nude</span>
+                </div>
+                <p class="work-card__desc">Тонкий блеск, ровное покрытие и аккуратная форма.</p>
+              </div>
+            </article>
+
+            <article class="work-card" role="listitem" data-tags="french">
+              <div class="work-card__img work-card__img--2"></div>
+              <div class="work-card__body">
+                <div class="work-card__top">
+                  <h3 class="work-card__title">Классический френч</h3>
+                  <span class="work-card__tag">french</span>
+                </div>
+                <p class="work-card__desc">Благородный белый, “чистая” улыбка и стойкость.</p>
+              </div>
+            </article>
+
+            <article class="work-card" role="listitem" data-tags="design">
+              <div class="work-card__img work-card__img--3"></div>
+              <div class="work-card__body">
+                <div class="work-card__top">
+                  <h3 class="work-card__title">Геометрия и тонкие линии</h3>
+                  <span class="work-card__tag">design</span>
+                </div>
+                <p class="work-card__desc">Минимум объема, максимум характера в деталях.</p>
+              </div>
+            </article>
+
+            <article class="work-card" role="listitem" data-tags="sparkle">
+              <div class="work-card__img work-card__img--4"></div>
+              <div class="work-card__body">
+                <div class="work-card__top">
+                  <h3 class="work-card__title">Втирка + мягкий блеск</h3>
+                  <span class="work-card__tag">sparkle</span>
+                </div>
+                <p class="work-card__desc">Ровное свечение и красивый переход по оттенку.</p>
+              </div>
+            </article>
+
+            <article class="work-card" role="listitem" data-tags="nude design">
+              <div class="work-card__img work-card__img--5"></div>
+              <div class="work-card__body">
+                <div class="work-card__top">
+                  <h3 class="work-card__title">Нюд + стразы на акцент</h3>
+                  <span class="work-card__tag">design</span>
+                </div>
+                <p class="work-card__desc">Легкий “вау-эффект” без перегруза.</p>
+              </div>
+            </article>
+
+            <article class="work-card" role="listitem" data-tags="french sparkle">
+              <div class="work-card__img work-card__img--6"></div>
+              <div class="work-card__body">
+                <div class="work-card__top">
+                  <h3 class="work-card__title">Френч с сиянием</h3>
+                  <span class="work-card__tag">french</span>
+                </div>
+                <p class="work-card__desc">Линия аккуратная, блеск мягкий и праздничный.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container">
+          <div class="section__head section__head--row">
+            <div>
+              <h2 class="section__title">Контакты и запись</h2>
+              <p class="section__subtitle">Нажмите “Записаться” — откроется форма заявки.</p>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn--primary" href="tel:+79990000000">Позвонить</a>
+              <a class="btn btn--ghost" href="https://t.me/your_username" target="_blank" rel="noreferrer">
+                Telegram
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3 class="contact-card__title">Связаться</h3>
+              <div class="contact-list">
+                <div class="contact-item">
+                  <span class="contact-item__k">Телефон</span>
+                  <a class="contact-item__v" href="tel:+79990000000">+7 (999) 000-00-00</a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-item__k">Telegram</span>
+                  <a class="contact-item__v" href="https://t.me/your_username" target="_blank" rel="noreferrer">@your_username</a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-item__k">Instagram</span>
+                  <a class="contact-item__v" href="https://instagram.com/your_username" target="_blank" rel="noreferrer">@your_username</a>
+                </div>
+              </div>
+              <div class="contact-card__note">
+                Замените контакты на ваши: номер телефона, ссылки на соцсети, и email в форме.
+              </div>
+            </div>
+
+            <div class="contact-card contact-card--cta">
+              <h3 class="contact-card__title">Оставить заявку</h3>
+              <p class="contact-card__text">
+                Напишите, какая услуга нужна и на какую дату планируете. Я отвечу и подтвержу запись.
+              </p>
+              <button class="btn btn--primary btn--full" type="button" data-open-booking>Открыть форму</button>
+              <div class="contact-card__small">
+                Если предпочитаете отправлять напрямую — замените `master@example.com` в `script.js`.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <span class="brand__mark" aria-hidden="true">✦</span>
+            <span>Мастер маникюра</span>
+          </div>
+          <div class="footer-copy">© <span id="year"></span> Все права защищены</div>
+        </div>
+        <div class="footer-right">
+          <a href="#top" class="footer-link">Наверх</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальное окно заявки -->
+    <div class="modal" id="bookingModal" aria-hidden="true">
+      <div class="modal__overlay" data-close-booking></div>
+      <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+        <button class="modal__close" type="button" aria-label="Закрыть" data-close-booking>
+          <span aria-hidden="true">×</span>
+        </button>
+
+        <h2 class="modal__title" id="bookingTitle">Запись на маникюр</h2>
+        <p class="modal__subtitle">Заполните форму — откроется письмо с заявкой.</p>
+
+        <form class="booking-form" id="bookingForm">
+          <label class="field">
+            <span class="field__label">Имя</span>
+            <input name="name" type="text" autocomplete="name" required placeholder="Например, Алина" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input name="phone" type="tel" autocomplete="tel" required placeholder="+7 ___ ___-__-__" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Услуга</span>
+            <select name="service" required>
+              <option value="" selected disabled>Выберите услугу</option>
+              <option value="Маникюр + гель-лак">Маникюр + гель-лак</option>
+              <option value="Наращивание / укрепление">Наращивание / укрепление</option>
+              <option value="Дизайн ногтей">Дизайн ногтей</option>
+              <option value="Снятие покрытия">Снятие покрытия</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Комментарий</span>
+            <textarea name="message" rows="4" placeholder="Например: нюд, длина средняя, дата/время…"></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--full" type="submit">Отправить заявку</button>
+          <div class="modal__fineprint">
+            Нажимая “Отправить заявку”, вы отправляете данные в email мастера (через `mailto`).
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
